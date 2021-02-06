@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Hungry Monster</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Home</a>
               <a class="nav-link" href="#">About</a>
               <a class="nav-link" href="#">Recipes</a>
               <a class="nav-link" href="#">Blog</a>
@@ -29,52 +29,21 @@
       
       <div class="container my-5">
         <div id="food-details">
-            
+
         </div>
       </div>
-
       <div class="container mt-5">
-        <div class="input-group mb-3 w-50 search">
+        <div class="input-group mb-3 w-50 input-area">
             <input id="search-input" type="text" class="form-control" placeholder="Search for meal.." >
             <div class="input-group-append">
-              <span onclick="getFoodList()" class="input-group-text"  >Search</span>
+              <span onclick="getFoodList()" class="input-group-text search-button" >Search</span>
             </div>
           </div>
       </div>
 
       <section class="container mt-5">
-        <div  class="row" id="food-container">
-            <!-- <div class="col px-md-4" id="single-food">
-              <div class="">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./food.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text"><h4>Master Chap</h4></p>
-                    </div>
-                  </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="col px-md-4">
-                <div class="">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./food.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="card-text"><h4>Master Chap</h4></p>
-                        </div>
-                      </div>
-                  </div>
-            </div> -->
-            <!-- <div class="col px-md-4">
-                <div class="">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./food.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="card-text"><h4>Master Chap</h4></p>
-                        </div>
-                      </div>
-                  </div>
-            </div> -->
+        <div class="row" id="food-container">
+           
         </div>
       </section>
 

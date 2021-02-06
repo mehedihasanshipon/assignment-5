@@ -10,7 +10,7 @@ const getFoodList = () => {
 const displayFood = (foods) =>{
     let foodContainer = document.getElementById("food-container");
     // let foods = data.meals;
-    if(foods === null){
+    if(foods === null || foods.length <0){
       const foodDiv = document.createElement("div");
       const foodInfo = `
           <h3> "Sorry, we didn't find any food!,Please search again."</h3>
@@ -57,7 +57,7 @@ const getFoodInfo = food => {
 		}
 	}
     foodDetail.innerHTML = `
-        <div class="card" style="width: 18rem;">
+        <div class="card card-custom">
             <img class="card-img-top" src="${food.strMealThumb}" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text"><h4>${food.strMeal}</h4></p>
