@@ -25,7 +25,7 @@ const displayFood = (foods) =>{
           const foodDiv = document.createElement("div");
           foodDiv.className = "col-md-4 my-3 foodDiv";
           const foodInfo = `
-                  <div onclick="displayCountryDetail('${food.idMeal}')" class="card card-custom" style="width: 18rem;">
+                  <div onclick="displayFoodDetail('${food.idMeal}')" class="card card-custom" style="width: 18rem;">
                       <img class="card-img-top" src="${food.strMealThumb}" alt="Card image cap">
                       <div class="card-body card-body-custom">
                           <p class="card-text"><h4>${food.strMeal}</h4></p>
@@ -41,7 +41,7 @@ const displayFood = (foods) =>{
 }
 
 // Function for load data from theMealDb api Search meal by id
-const displayCountryDetail = foodDetails => {
+const displayFoodDetail = foodDetails => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodDetails}`
     fetch(url)
     .then(res => res.json())
