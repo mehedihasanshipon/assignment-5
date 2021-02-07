@@ -13,7 +13,7 @@ const displayFood = (foods) =>{
     if(foods === null || foods.length <0){
       const foodDiv = document.createElement("div");
       const foodInfo = `
-          <h3> "Sorry, we didn't find any food!,Please search again."</h3>
+          <h3 class="nothing"> Sorry, we didn't find any food!,Please search again.</h3>
       `;
       foodDiv.innerHTML = foodInfo;
       foodContainer.appendChild(foodDiv);
@@ -21,7 +21,7 @@ const displayFood = (foods) =>{
       foods.forEach((food) => {
           // console.log(food);
           const foodDiv = document.createElement("div");
-          foodDiv.className = "col-md-4 my-3";
+          foodDiv.className = "col-md-4 my-3 foodDiv";
           const foodInfo = `
                   <div onclick="displayCountryDetail('${food.idMeal}')" class="card" style="width: 18rem;">
                       <img  class="card-img-top" src="${food.strMealThumb}" alt="Card image cap">
@@ -68,6 +68,6 @@ const getFoodInfo = food => {
             </div>
         </div>
          `;
-}
+    }
 
 
