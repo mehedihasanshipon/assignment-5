@@ -1,3 +1,8 @@
+.nav-items{
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 20px;
+}
 .input-area{
     margin: auto;
 }
@@ -9,9 +14,15 @@
 .card-custom{
     width: 450px;
     margin: auto;
+    border-style: none;  
+}
+.card-body-custom{
+    background-color: #F8F7F5;
 }
 .card-custom img{
-    height: 350px;
+    /* height: 350px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .foodDiv{
     cursor: pointer;

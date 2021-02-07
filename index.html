@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <!-- Nav area -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand" href="#">Hungry Monster</a>
@@ -17,21 +18,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Recipes</a>
-              <a class="nav-link" href="#">Blog</a>
+            <div class="navbar-nav ms-auto nav-items">
+              <a class="nav-link nav-items" href="#">Home</a>
+              <a class="nav-link nav-items" href="#">About</a>
+              <a class="nav-link nav-items" href="#">Recipes</a>
+              <a class="nav-link nav-items" href="#">Blog</a>
             </div>
           </div>
         </div>
       </nav>
-      
+      <!--End of Nav area -->
+      <!-- Show details about single food -->
       <div class="container my-5">
         <div id="food-details">
 
         </div>
       </div>
+      <!--End section Show details about single food -->
+      <!--Start section of input area -->
       <div class="container mt-5">
         <div class="input-group mb-3 w-50 input-area">
             <input id="search-input" type="text" class="form-control" placeholder="Search for meal.." >
@@ -40,13 +44,14 @@
             </div>
           </div>
       </div>
-
+  <!--End section of input area -->
+  <!--Start section of food container area -->
       <section class="container mt-5">
         <div class="row" id="food-container">
            
         </div>
       </section>
-
+  <!--End section of food container area -->
 <script src="./script.js"></script>      
 </body>
 </html>
